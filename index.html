@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all-loops in java script</title>
+</head>
+
+<body>
+
+    <center>
+        <h1>All loops in java script</h1>
+    </center>
+
+    <ol>
+        <li>for loop</li>
+        <li>while loop</li>
+        <li>do...while loop</li>
+        <li>for...in loop</li>
+        <li>for...of loop</li>
+        <li>forEach method</li>
+        <li>map method</li>
+    </ol>
+    <div>
+
+
+        <pre>
+            <h2>for loop</h2>
+            for(let i=0;i<=10;i++)
+            {
+                        console.log(i);
+            }
+    
+            let know=[0,9,8,7,6,5,4,3,2,1];
+    
+            for(let i=0;i< know.length;i++)
+            {
+                        console.log(know[i]);
+            }
+            <h2>while loop</h2>
+             
+            let i=0;
+        while (i< =10) 
+        {
+            
+                    console.log(i);
+                    i++;
+        }
+
+        let work=["s","u","l","t","a","n"];
+
+        let i=0;
+        while(i< work.length)
+        {
+            console.log(work[i]);
+              i++;
+        }
+        <h2>do while loop</h2>
+       
+        let i = 0;
+        do {
+            console.log(i);
+            i++;
+
+        } while (i <= 10);
+
+        let show = ["my", "name", "is", "sultan"];
+        let i = 0;
+        do {
+            console.log(show[i]);
+            i++
+        } while (i < show.length);
+
+        <h2>for each loop</h2>
+        <br>
+        //array ke liye istemal karte hai
+
+        let solve=[12,34,56,"lvondo",76];
+
+        solve.forEach(function(value,i)
+        {
+                    console.log(i,value);
+        })
+
+        <h2>for in loop</h2>
+        let car = {
+            car1: "swift",
+            car2: "mercedise",
+            car3: "auto"
+        }
+
+        for (let welcome in car) {
+            console.log(car[welcome]);
+        }
+
+        <h2>for of loop</h2>
+        <h3>The for...of loop iterates over iterable objects (including arrays, strings, maps, sets, etc.), returning the values of the elements.</h3>
+
+        let fruits = ["Apple", "Banana", "Cherry"];
+
+        
+        for (let fruit of fruits) {
+            console.log(fruit);
+        }
+
+        </pre>
+    </div>
+
+
+    <script>
+
+        // for loop
+
+        // for(let i=0;i<=10;i++)
+        // {
+        //             console.log(i);
+        // }
+
+        // let know=[0,9,8,7,6,5,4,3,2,1];
+
+        // for(let i=0;i<know.length;i++)
+        // {
+        //             console.log(know[i]);
+        // }
+
+        // while loop
+
+        // let i=0;
+        // while (i<=10) 
+        // {
+
+        //             console.log(i);
+        //             i++;
+        // }
+
+        // let work=["s","u","l","t","a","n"];
+
+        // let i=0;
+        // while(i<work.length)
+        // {
+        //     console.log(work[i]);
+        //       i++;
+        // }
+
+        // do while loop
+
+        // let i = 0;
+        // do {
+        //     console.log(i);
+        //     i++;
+
+        // } while (i <= 10);
+
+        // let show = ["my", "name", "is", "sultan"];
+        // let i = 0;
+        // do {
+        //     console.log(show[i]);
+        //     i++
+        // } while (i < show.length);
+
+        // for each loop
+
+        // let solve=[12,34,56,"lvondo",76];
+
+        // solve.forEach(function(value,i)
+        // {
+        //             console.log(i,value);
+        // })
+
+        // for in loop
+
+        // let car = {
+        //     car1: "swift",
+        //     car2: "mercedise",
+        //     car3: "auto"
+        // }
+
+        // for (let welcome in car) {
+        //     console.log(car[welcome]);
+        // }
+
+        let fruits = ["Apple", "Banana", "Cherry"];
+
+
+        for (let fruit of fruits) {
+            console.log(fruit);
+        }
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
